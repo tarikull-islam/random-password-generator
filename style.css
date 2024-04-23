@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:#00000044;
+    --secendory-color:#26272678;
+    --softGreen-color:#65c666;
+    --text-color:#000000;
+    --bg-color:#ffffff;
+}
+.dark-mode{
+    --primary-color:#f7f0f0bb;
+    --secendory-color:#c7d1c778;
+    --softGreen-color:#85cd86;
+    --text-color:#ffffffb9;
+    --bg-color:#000000;
+}
+body{
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: start;
+    border: 1px solid var(--secendory-color);
+    padding: 3rem;
+}
+h2{
+    font-size: 2rem;
+    color: var(--text-color);
+}
+h1{
+    color: var(--text-color);
+}
+hr{
+    width: 50%;
+    height: 3px;
+    background-color: var(--softGreen-color);
+    border: none;
+}
+.passwordBox,.generatePassBtn,.copyBtn{
+    padding: .4rem 2rem;
+    font-size: 1.3rem;
+    border: 0.1px solid var(--secendory-color);
+}
+.passwordBox:focus{
+    outline: none;
+}
+.passwordBox{
+    color: var(--white-color);
+}
+.copyBtn,.generatePassBtn{
+    color: var(--text-color);
+    background-color: var(--softGreen-color);
+    border: none;
+    font-weight: 600;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.colorCng{
+    padding: .4rem 1rem;
+    font-size: 1.3rem;
+    color: var(--text-color);
+    border: 0.1px solid var(--secendory-color);
+    text-transform: capitalize;
+    cursor: pointer;
+    background-color: var(--white-color);
+}
